@@ -16,6 +16,7 @@ def start_position(turtle_list):
         turtle.penup()
         turtle.goto(x = -x_position, y = y_pos)
         turtle.pendown()
+
 def moving(turtle_list):
     is_end = False
     end_of_canvas = screen.window_width()/2
@@ -29,7 +30,7 @@ def moving(turtle_list):
             else:
                 is_end = True
                 if user_bet == turtle.color():
-                    print(f"Race is finished. YOU WON THE BET {turtle.color()} is the winner")
+                    print(f"Race is finished. YOU WON THE BET {turtle.color()[0].upper()} is the winner")
             print(f"{turtle.color()[0].upper()} turtle has won the race. YOU LOSE")
 
 for num in range(0,6):
