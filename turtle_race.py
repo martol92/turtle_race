@@ -6,11 +6,11 @@ screen.setup(width = 650, height = 650)
 user_bet = screen.textinput(title = "Make your bet", prompt = "WHO WILL WIN (choose color)?")
 all_turtles = []
 colors = ["red", "blue", "green", "yellow", "purple", "black"]
-y_positions = [300, 200, 100, -100, -200, -300]
-x_position = 300
+
 
 def start_position(turtle_list):
-    
+    y_positions = [300, 200, 100, -100, -200, -300]
+    x_position = 300
     for turtle in turtle_list:
         y_pos = y_positions[turtle_list.index(turtle)]
         turtle.penup()
